@@ -55,6 +55,7 @@ export default function MoviePlayer({ movieId, movieTitle }: MoviePlayerProps) {
           title={`${movieTitle} - ${players[player].label}`}
           className="h-full w-full border-0"
           allowFullScreen
+           sandbox="allow-scripts allow-same-origin allow-presentation"
         />
       </div>
     </section>

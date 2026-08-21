@@ -114,6 +114,7 @@ export default async function MovieDetailsPage({
                 src={`https://www.youtube.com/embed/${trailer.key}`}
                 title={trailer.name}
                 allowFullScreen
+                 sandbox="allow-scripts allow-same-origin allow-presentation"
               />
             </div>
           </section>
