@@ -21,6 +21,10 @@ export default function MoviePlayer({ movieId, movieTitle }: MoviePlayerProps) {
       label: 'Player 2',
       src: `https://vidsrc.sbs/embed/movie/${movieId}`,
     },
+    Vidlink:{
+        label: 'Player 3',
+        src: `https://vidlink.org/embed/movie/${movieId}`,
+    }
   };
 
   return (
@@ -55,7 +59,7 @@ export default function MoviePlayer({ movieId, movieTitle }: MoviePlayerProps) {
           title={`${movieTitle} - ${players[player].label}`}
           className="h-full w-full border-0"
           allowFullScreen
-           sandbox="allow-scripts allow-same-origin allow-presentation"
+          
         />
       </div>
     </section>
